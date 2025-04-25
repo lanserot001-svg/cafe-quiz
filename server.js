@@ -58,6 +58,7 @@ app.post('/submit', (req, res) => {
               padding: 0;
               height: 100vh;
               width: 100vw;
+               overflow: hidden;
               background-image: url('https://cdn.glitch.global/8ad5a062-999b-4450-bbaa-f3fe6bafa82b/Quiz-congratuation.webp?v=1745590017462');
               
               background-repeat: no-repeat;
@@ -65,16 +66,17 @@ app.post('/submit', (req, res) => {
               background-size: auto 100vh; /* 💡 핵심! */
               background-color: #000;
               font-family: Arial, sans-serif;
-              color: white;
-              text-align: center;
-              padding-top: 100px;
+              color: black;
               
-             /* background-size: cover;
-              background-position: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end; /* ✅ 아래로 정렬 */
+              align-items: center;
+              padding-bottom: 80px; /* ✅ 바닥에서 간격 띄우기 */
               text-align: center;
-              color: #fff;
-              font-family: sans-serif;
-              margin-top: 100px; */ 
+              
+              
+           
             }
             h2 { font-size: 48px; }
             p  { font-size: 24px; }
@@ -94,13 +96,21 @@ app.post('/submit', (req, res) => {
             body {
               margin: 0;
               padding: 0;
+               height: 100vh;
+              width: 100vw;
+               overflow: hidden;
               background-image: url('https://cdn.glitch.global/8ad5a062-999b-4450-bbaa-f3fe6bafa82b/Quiz-fail.jpg?v=1745590021592');
-              background-size: cover;
-              background-position: center;
+              
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: auto 100vh; /* 💡 핵심! */
+              background-color: #000;
+              font-family: Arial, sans-serif;
+              color: white;
               text-align: center;
-              color: #fff;
-              font-family: sans-serif;
-              margin-top: 100px;
+              padding-top: 100px
+              
+              
             }
             h2 { font-size: 48px; }
             p  { font-size: 24px; }
