@@ -75,7 +75,7 @@ app.post('/submit', (req, res) => {
               flex-direction: column;
               justify-content: center; /* ✅ 아래로 정렬 */
               align-items: center;
-              padding-top: 100px; /* ✅ 바닥에서 간격 띄우기 */
+              padding-top: 200px; /* ✅ 바닥에서 간격 띄우기 */
               text-align: center;
               
               
@@ -109,13 +109,13 @@ app.post('/submit', (req, res) => {
               background-size: auto 100vh; /* 💡 핵심! */
               background-color: #000;
               font-family: Arial, sans-serif;
-              color: white;
+              color: black;
               
               display: flex;
               flex-direction: column;
-              justify-content: flex-end; /* ✅ 아래로 정렬 */
+              justify-content: center; /* ✅ 아래로 정렬 */
               align-items: center;
-              padding-bottom: 80px; /* ✅ 바닥에서 간격 띄우기 */
+              padding-top: 250px; /* ✅ 바닥에서 간격 띄우기 */
               
               text-align: center;
              
