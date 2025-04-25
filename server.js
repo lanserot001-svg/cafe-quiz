@@ -53,13 +53,16 @@ app.post('/submit', (req, res) => {
       <html>
         <head>
           <style>
-            body {
+            html,body {
               margin: 0;
               padding: 0;
               height: 100vh;
               width: 100vw;
-               overflow: hidden;
-              background-image: url('https://cdn.glitch.global/8ad5a062-999b-4450-bbaa-f3fe6bafa82b/Quiz-congratuation.webp?v=1745590017462');
+              overflow: hidden;
+               }
+             body {
+             
+               background-image: url('https://cdn.glitch.global/8ad5a062-999b-4450-bbaa-f3fe6bafa82b/Quiz-congratuation.webp?v=1745590017462');
               
               background-repeat: no-repeat;
               background-position: center center;
@@ -70,9 +73,9 @@ app.post('/submit', (req, res) => {
               
               display: flex;
               flex-direction: column;
-              justify-content: flex-end; /* ✅ 아래로 정렬 */
+              justify-content: center; /* ✅ 아래로 정렬 */
               align-items: center;
-              padding-bottom: 80px; /* ✅ 바닥에서 간격 띄우기 */
+              padding-top: 100px; /* ✅ 바닥에서 간격 띄우기 */
               text-align: center;
               
               
@@ -107,8 +110,15 @@ app.post('/submit', (req, res) => {
               background-color: #000;
               font-family: Arial, sans-serif;
               color: white;
+              
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end; /* ✅ 아래로 정렬 */
+              align-items: center;
+              padding-bottom: 80px; /* ✅ 바닥에서 간격 띄우기 */
+              
               text-align: center;
-              padding-top: 100px
+             
               
               
             }
