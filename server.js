@@ -83,11 +83,20 @@ app.post('/submit', (req, res) => {
             }
             h2 { font-size: 48px; }
             p  { font-size: 24px; }
+            
+            .reward {
+          font-size: 60px;          /* 💥 여기! 보상 크기 키움 */
+          font-weight: bold;
+          color: red;               /* 색도 바꿀 수 있어요 */
+          }
+          
           </style>
         </head>
         <body>
           <h2>🎉 잘했군, 자 이걸 받아라.</h2>
-          <p><strong>1357</strong></p>
+          <p class="reward">1357</p>
+          
+        
         </body>
       </html>
     `);

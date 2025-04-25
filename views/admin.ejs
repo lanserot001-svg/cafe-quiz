@@ -1,8 +1,68 @@
-<h2>관리자 정답 입력</h2>
-<form method="POST" action="/admin">
-  <input type="password" name="password" placeholder="관리자 비밀번호" required><br>
-  <% for (let i = 1; i <= 10; i++) { %>
-    <input name="answer<%= i %>" placeholder="정답 <%= i %>"><br>
-  <% } %>
-  <button type="submit">정답 저장</button>
-</form>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>관리자 정답 입력</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  /* 세로 중앙 정렬 */
+      align-items: center;      /* 가로 중앙 정렬 */
+      background-color: #f0f0f0;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>관리자 정답 입력</h2>
+  <form method="POST" action="/admin">
+    <input type="password" name="password" placeholder="관리자 비밀번호" required>
+    <% for (let i = 1; i <= 10; i++) { %>
+      <input name="answer<%= i %>" placeholder="정답 <%= i %>">
+    <% } %>
+    <button type="submit">정답 저장</button>
+  </form>
+</body>
+</html>
