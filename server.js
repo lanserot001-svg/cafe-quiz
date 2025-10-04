@@ -88,8 +88,8 @@ app.post('/submit', (req, res) => {
     }
   }
 
-  // ✅ 성공 (정답 7개 이상)
-  if (correctCount >= 7) {
+  // ✅ 성공 (정답 8개 이상)
+  if (correctCount >= 8) {
     res.send(`
       <html>
         <head>
