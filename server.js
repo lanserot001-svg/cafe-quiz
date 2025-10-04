@@ -124,13 +124,20 @@ app.post('/submit', (req, res) => {
             .reward {
               font-size: 60px;
               font-weight: bold;
-              color: #ff3333;
+              color: #080808ff;
             }
-          </style>
+          .message {
+              margin-top: 20px;
+              font-size: 30px;
+              color: white; /* ✅ 추가 문구는 흰색 */
+              text-shadow: 2px 2px 6px #000;
+            }
+            </style>
         </head>
         <body>
           <h2>하얀 얼굴이 내뿜는 붉은 빛을<br>빨간 점에 3초 이상 비추어라!</h2>
           <p class="reward">${reward}</p>
+          <p class="message">"플레이그는 짖궂게도 뱀파이어가<br>싫어하는 곳에 이름의 힌트를 숨겼지"</p>
         </body>
       </html>
     `);
