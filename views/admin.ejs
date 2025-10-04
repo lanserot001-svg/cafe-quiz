@@ -59,10 +59,16 @@
   <h2>관리자 정답 입력</h2>
   <form method="POST" action="/admin">
     <input type="password" name="password" placeholder="관리자 비밀번호" required>
+
     <% for (let i = 1; i <= 10; i++) { %>
-      <input name="answer<%= i %>" placeholder="정답 <%= i %>">
+      <input name="answer<%= i %>" placeholder="정답 <%= i %>" 
+             value="<%= answers[i-1] ? answers[i-1] : '' %>">
     <% } %>
-    <button type="submit">정답 저장</button>
+
+    <!-- ✅ 보상 코드 칸, 기존 값 미리 채움 -->
+    <input name="reward" placeholder="보상 코드" value="<%= reward %>">
+
+    <button type="submit">저장</button>
   </form>
 </body>
 </html>
