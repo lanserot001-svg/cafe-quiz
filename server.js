@@ -137,7 +137,7 @@ app.post('/submit', (req, res) => {
         <body>
           <h2>하얀 얼굴이 내뿜는 붉은 빛을<br>빨간 점에 3초 이상 비추어라!</h2>
           <p class="reward">${reward}</p>
-          <p class="message">"플레이그는 짖궂게도 뱀파이어가<br>싫어하는 곳에 이름의 힌트를 숨겼지"</p>
+          <p class="message">"플레이그는 잭 스캘리톤을<br>그가 세상에 처음으로 모습을 보인 때로<br> 보내버렸다."</p>
         </body>
       </html>
     `);
