@@ -137,7 +137,7 @@ app.post('/submit', (req, res) => {
         <body>
           <h2>하얀 얼굴이 내뿜는 붉은 빛을<br>빨간 점에 3초 이상 비추어라!</h2>
           <p class="reward">${reward}</p>
-          <p class="message">"플레이그는 잭 스캘리톤을<br>그가 세상에 처음으로 모습을 보인 때로<br> 보내버렸다."</p>
+          <p class="message">"플레이그는 잭 스캘리톤을<br>그가 주연으로 세상에 처음 나온 때로<br> 보내버렸다."</p>
         </body>
       </html>
     `);
@@ -183,7 +183,7 @@ app.post('/submit', (req, res) => {
           </style>
         </head>
         <body>
-          <h2>❌ 이걸론 부족한데!</h2>
+          <h2>❌ 이걸론 부족한데! 8개 이상이상이 필요해.</h2>
           <p>맞힌 개수: ${correctCount}개</p>
           <form action="/" method="GET">
             <button type="submit">🔄 다시 입력</button>
